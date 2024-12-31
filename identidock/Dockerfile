@@ -6,7 +6,7 @@ RUN groupadd -r uwsgi && useradd -r -g uwsgi uwsgi
 #     build-essential \
 #     && rm -rf /var/lib/apt/lists/*
     
-RUN pip install Flask==2.3.2 uWSGI==2.0.20 requests redis
+RUN pip install Flask==2.3.2 uWSGI==2.0.20 requests redis Werkzeug==2.3.3
 WORKDIR /app
 COPY app /app/
 COPY cmd.sh /
