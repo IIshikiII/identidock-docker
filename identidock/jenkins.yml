@@ -1,6 +1,6 @@
 services:
   identidock:
-    build:
+    build: .
     ports:
       - "9090:9090"
     expose:
