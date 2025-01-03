@@ -1,6 +1,6 @@
 services:
   identidock:
-    build: .
+    image: ishikii/identidock-identidock:0.2
     ports:
       - "5000:5000"
     environment:
